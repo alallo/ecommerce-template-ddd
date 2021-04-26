@@ -6,3 +6,5 @@
 /src/Product/obj
 /src/.vs/EcommerceTemplate
 /.vs
+/src/Product.Application/bin/Debug/netstandard2.0
+/src/Product.Application/obj
