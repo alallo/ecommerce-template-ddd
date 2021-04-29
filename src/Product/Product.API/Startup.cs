@@ -5,7 +5,9 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-
+using Product.Application.Interfaces;
+using Product.Infrastructure.Extensions;
+using Product.Infrastructure.Services;
 
 namespace Product
 {
@@ -21,8 +23,11 @@ namespace Product
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+
+            services.AddConfig(Configuration);
             services.AddControllers();
             services.AddMediatR(typeof(Application.Queries.GetProductListQuery));
+            services.AddSingleton<IProductService, ProductService>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

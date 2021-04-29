@@ -8,3 +8,11 @@
 /.vs
 /src/Product.Application/bin/Debug/netstandard2.0
 /src/Product.Application/obj
+/src/Product/Product.API/bin/Debug/net5.0
+/src/Product/Product.API/obj
+/src/Product/Product.Application/bin/Debug/net5.0
+/src/Product/Product.Application/obj
+/src/Product/Product.Domain/bin/Debug/net5.0
+/src/Product/Product.Infrastructure/bin/Debug/net5.0
+/src/Product/Product.Infrastructure/obj
+/src/Product/Product.Domain/obj

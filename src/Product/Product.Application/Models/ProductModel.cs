@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Product.Application.Queries
+namespace Product.Application.Models
 {
-    public class GetProductListQueryResponse
+    public class ProductModel
     {
         public int Id { get; set; }
         public string Name { get; set; }
